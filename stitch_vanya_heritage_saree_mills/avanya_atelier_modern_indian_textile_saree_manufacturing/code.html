@@ -1,0 +1,731 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#354c3f","on-primary-container":"#9cb6a5","outline-variant":"#c2c8c2","on-error-container":"#93000a","tertiary":"#3c2a00","surface-container":"#f0eded","on-secondary-fixed":"#390b00","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0ef","inverse-primary":"#b3cdbb","on-secondary-fixed-variant":"#733520","error-container":"#ffdad6","on-surface-variant":"#424844","on-primary":"#ffffff","background":"#fcf9f8","outline":"#727973","on-secondary":"#ffffff","surface-bright":"#fcf9f8","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb59d","on-secondary-container":"#783923","secondary-fixed":"#ffdbd0","secondary":"#904b35","surface":"#fcf9f8","surface-tint":"#4c6456","primary-container":"#31483b","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-high":"#eae7e7","inverse-surface":"#313030","on-tertiary-fixed-variant":"#5a430e","surface-container-highest":"#e5e2e1","tertiary-fixed-dim":"#e4c282","on-tertiary-fixed":"#261900","on-background":"#1c1b1b","primary":"#1b3126","primary-fixed":"#cee9d7","on-surface":"#1c1b1b","surface-variant":"#e5e2e1","primary-fixed-dim":"#b3cdbb","tertiary-container":"#563f0a","secondary-container":"#fea589","tertiary-fixed":"#ffdea3","on-primary-fixed":"#092015","error":"#ba1a1a","on-tertiary-container":"#ccab6d"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"3rem","margin-desktop":"4rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.75rem","margin":"1.25rem","gutter-desktop":"2.5rem"},fontFamily:{"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"headline-md-mobile":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"spec-num":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"display-hero-mobile":["Playfair Display"]},fontSize:{"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"headline-md-mobile":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"spec-num":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-hero":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script><style>.font-headline-lg, .font-headline-md, .font-headline-sm, .font-display-hero, .font-headline-lg-mobile, .font-headline-md-mobile, .font-display-hero-mobile, h1, h2, h3, .font-serif { font-family: 'Cormorant Garamond', serif !important; letter-spacing: -0.01em; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin md:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Avanya Textile Atelier Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQNmk_EfOEqPxUgxGJnT20y2EUAv0oK7bUKoOSfr_ntK5i5YuUC7Ucl2as-XC6zLUTIOo-afHLJ-eZyu9obBj4JSzxdyKEo_MhakBssmLFgGm3BPqSQTOxnXZvPNVlmS8Q7IJaLiKW7MQWGrghgtOjMpYVkHZCd2w2y2oM0v0k6KO3ZCtgDC4A857oVilmhzW9Ji3Se7YCAqjty0zRiIY5b2KyRDXVFCBnKwbUC-mlj0HFFy-7Dg5"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">Avanya</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Textile Atelier</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b border-primary"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="collections" href="#">Collections</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="sarees" href="#">Sarees</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="fabric-library" href="#">Fabric Library</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="manufacturing" href="#">Manufacturing</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="about" href="#">About</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-1" data-path="journal" href="#">Journal</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors rounded-none font-label-md text-label-md uppercase tracking-wider" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-primary">chat</span><span class="">WhatsApp Enquiry</span></a><a class="flex items-center px-space-lg py-space-sm bg-primary hover:bg-primary-container text-on-primary transition-colors rounded-none font-label-md text-label-md uppercase tracking-widest" data-path="request-catalogue" href="#">Request Catalogue</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full min-h-[92vh] flex items-center justify-start overflow-hidden bg-primary text-on-primary">
+<!-- Immersive Background Imagery with Luxury Editorial Lighting -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-top opacity-55 scale-105 transition-transform duration-1000 ease-out" data-alt="Indian couture saree draped gracefully over a serene model in a brutalist textured stone pavilion with architectural light streams" id="hero-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0GM0kmlddTJVCFfSJ7_9Yng5jlVP8AUepth91hcoxVeFz6MHVHoKCygymygcH9WLJCGFlbqeqs_rvjLBJ6YMhZKhbkz2vqEgDwYGv5c1oCpadt7JEbVgSMUkpo4FfGCOtB-QtrWiD9whJ1BfwZt0sbwePI-r4qfc2TE3trfYp-tAC-774IMG7aUlYVzKltWSB0NLFHRvFT9cTRLMT8DjedTMm0LJyNO8o9yce5OVRjYQsnqGTkhFe">
+<div class="absolute inset-0 bg-gradient-to-r from-[#171717]/95 via-[#171717]/70 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#171717] via-transparent to-transparent"></div>
+</div>
+<!-- Editorial Foreground Content -->
+<div class="relative z-10 w-full max-w-7xl mx-auto px-margin md:px-margin-desktop py-space-xl flex flex-col justify-between">
+<div class="max-w-3xl space-y-space-md">
+<!-- Overline Tag -->
+<div class="inline-flex items-center gap-space-sm px-3 py-1.5 bg-surface/10 backdrop-blur-md text-surface-bright rounded-none">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[#e4c282]">Indian Textiles · Crafted for the World</span>
+</div>
+<!-- Monumental Editorial Headline -->
+<h1 class="font-headline-lg md:font-display-hero text-headline-lg md:text-display-hero font-normal tracking-tight text-[#fcf9f8] leading-[1.08]">
+          Where Tradition <br class="hidden sm:block">
+<span class="italic font-light text-secondary-fixed">Meets the Future</span> <br class="hidden sm:block">
+          of Textiles.
+        </h1>
+<!-- High-Precision Subtext -->
+<p class="font-body-lg text-body-lg text-[#c2c8c2] max-w-2xl font-light leading-relaxed">
+          Premium heirloom sarees, high-twist silks, and bespoke jacquards crafted with architectural precision and high-volume industrial capability for premier fashion houses, haute couture ateliers, and international distributors.
+        </p>
+<!-- CTAs Strip -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-md">
+<a class="px-space-lg py-4 bg-[#fcf9f8] text-primary hover:bg-[#cee9d7] transition-all duration-300 font-label-md text-label-md uppercase tracking-widest font-semibold shadow-lg" href="#collections">
+            Explore Collections
+          </a>
+<a class="px-space-lg py-4 bg-transparent text-[#fcf9f8] hover:bg-surface/10 transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#catalogue-request">
+            Request Catalogue
+          </a>
+<a class="inline-flex items-center gap-2 px-space-md py-4 bg-[#31483b]/60 hover:bg-[#31483b] text-[#cee9d7] transition-colors font-label-md text-label-md uppercase tracking-wider backdrop-blur-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">WhatsApp Quick Connect</span>
+</a>
+</div>
+</div>
+<!-- Hero Bottom Archival Metadata -->
+<div class="mt-space-xl pt-space-lg flex flex-wrap items-center justify-between gap-space-md text-[#c2c8c2]">
+<div class="flex items-center gap-space-lg font-spec-num text-spec-num text-xs tracking-wider uppercase">
+<span class="">Mill Reg: IND-VNS-9042</span>
+<span class="opacity-40">•</span>
+<span class="">Warp Capacity: 180,000 m/mo</span>
+<span class="opacity-40">•</span>
+<span class="">OEKO-TEX® &amp; Silk Mark Certified</span>
+</div>
+<div class="flex items-center gap-2 text-surface-bright/70 font-label-sm text-label-sm uppercase tracking-widest">
+<span class="">Scroll Down to Discover</span>
+<span class="material-symbols-outlined text-sm animate-bounce">arrow_downward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. BRAND STATEMENT (ARCHITECTURAL WHITESPACE) -->
+<section class="w-full bg-[#f6f3f2] py-space-xl md:py-28">
+<div class="max-w-6xl mx-auto px-margin md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-baseline">
+<!-- Left Spine Marker -->
+<div class="lg:col-span-3 flex flex-col space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">The Textile House</span>
+<span class="font-spec-num text-spec-num text-on-surface-variant text-xs">Est. Varanasi &amp; Surat</span>
+</div>
+<!-- Right Editorial Statement -->
+<div class="lg:col-span-9 space-y-space-lg">
+<h2 class="font-headline-lg md:font-headline-lg text-headline-md md:text-headline-lg font-normal tracking-tight text-on-background leading-tight">
+            “We don’t merely manufacture cloth. <br class="hidden md:inline">
+<span class="italic text-primary font-normal">We engineer fabrics that become historical statements.</span>”
+          </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed font-normal">
+<p class="">
+              At Avanya, our master weavers orchestrate thousands of warp threads through both traditional kadhua pit-looms and computer-calibrated electronic jacquards. Each millimeter of brocade, zardozi insertion, and twist coefficient is audited under rigorous industrial parameters.
+            </p>
+<p class="">
+              By unifying heritage handloom provenance with ISO-certified production cadences, we supply world-class fashion houses, luxury couture designers, and premier global wholesale buyers with consistent dye lots, flawless selvedges, and uncompromised yarn counts.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. TRUST & MANUFACTURING CAPABILITY STRIP (B2B METRICS) -->
+<section class="w-full bg-surface-container-lowest py-space-lg">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-y-space-lg gap-x-space-md">
+<div class="flex flex-col space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Saree Collections</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-semibold">18+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Annual Edits</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Bespoke Couture &amp; Prêt Runs</span>
+</div>
+<div class="flex flex-col space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Fabric Variations</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-semibold">340+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">In-Stock Weaves</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Silks, Organzas, Georgettes</span>
+</div>
+<div class="flex flex-col space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Monthly Loom Output</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-semibold">120K+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Meters</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">High-speed jacquard capacity</span>
+</div>
+<div class="flex flex-col space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Global Market Reach</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-semibold">28+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Countries</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Direct DDP &amp; CIF export logistics</span>
+</div>
+<div class="col-span-2 md:col-span-1 flex flex-col space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Weaving Precision</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-semibold">99.8%</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">First-Pass Yield</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Laser defect scanning systems</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. EDITORIAL COLLECTIONS SHOWCASE ("EXPLORE THE COLLECTION") -->
+<section class="w-full bg-surface py-space-xl" id="collections">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Volume III / Archival Curations</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-background mt-1 font-normal">
+            Loom Series &amp; Saree Edits
+          </h2>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">MOQ: 25 Units / Colourway</span>
+<a class="px-space-md py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" href="#catalogue-request">
+            Request Spec Sheets
+          </a>
+</div>
+</div>
+<!-- Curated Category Cards Bento Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop">
+<!-- Feature 1: Pure Handloom Silks (Large Column) -->
+<div class="group md:col-span-7 bg-surface-container-lowest flex flex-col overflow-hidden shadow-sm transition-all duration-500 hover:shadow-md">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Indian woman wearing an architectural pleated sage green luxury handloom saree in an outdoor stone courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAliwND8XgW8klZzrs_EtHl6C-Y1_erj7qTO-czq6IP20Qhp5yhpB_u_yhXkwdgXH5kG0aKPWcOrvPAgJP1CrgAzP-QGwHfB12vhzAx4PEEEAUmI9TlpUc3-3NMGoFfc4qklTw98jD18CmlXeubn7m_GHK1GY0Gx8rlFJtlzxUiGpm6fIIqS9B1g8-nFzbgcC06rI8JWzXwAIoqpxiAicGv81hIsYlhW1j93lhUIIGNwr1mGOQjdvdv">
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-[#171717]/85 backdrop-blur-md text-[#fcf9f8] font-label-sm text-label-sm uppercase tracking-widest">Master Handloom</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1.5 font-spec-num text-spec-num text-xs">
+              Lead Time: 18-24 Days
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  Pure Katan &amp; Mulberry Handloom Silks
+                </h3>
+<span class="font-spec-num text-spec-num font-semibold text-on-surface-variant">110-140 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Authentic warp-density Varanasi weaves with hand-guided reed shuttles. Featuring matte antique zari work, certified mulberry yarn, and bespoke temple-motif borders.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline text-xs uppercase tracking-widest font-label-sm">
+<span class="">Warp: 20/22 Denier Mulberry</span>
+<a class="text-primary font-bold hover:underline underline-offset-4 flex items-center gap-1" href="#catalogue-request">
+                Inquire Batch <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Feature 2: High-Precision Jacquard Sarees -->
+<div class="group md:col-span-5 bg-surface-container-lowest flex flex-col overflow-hidden shadow-sm transition-all duration-500 hover:shadow-md">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Luxury cream and bottle green silk saree with detailed hand woven borders captured in a minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0GM0kmlddTJVCFfSJ7_9Yng5jlVP8AUepth91hcoxVeFz6MHVHoKCygymygcH9WLJCGFlbqeqs_rvjLBJ6YMhZKhbkz2vqEgDwYGv5c1oCpadt7JEbVgSMUkpo4FfGCOtB-QtrWiD9whJ1BfwZt0sbwePI-r4qfc2TE3trfYp-tAC-774IMG7aUlYVzKltWSB0NLFHRvFT9cTRLMT8DjedTMm0LJyNO8o9yce5OVRjYQsnqGTkhFe">
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest">High-Speed Jacquard</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  Industrial Jacquard Brocades
+                </h3>
+<span class="font-spec-num text-spec-num font-semibold text-on-surface-variant">95 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mill-scale repeat precision engineered for international export volumes. Micro-tension control prevents weft distortion across continuous 500-meter batch runs.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline text-xs uppercase tracking-widest font-label-sm">
+<span class="">Colorways: 14 Pantone Dyelots</span>
+<a class="text-primary font-bold hover:underline underline-offset-4 flex items-center gap-1" href="#catalogue-request">
+                Download Specs <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 3 Secondary Grid Cards -->
+<!-- Card A: Digital Art Organza -->
+<div class="group md:col-span-4 bg-surface-container-lowest flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-low">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Micro close-up of translucent pure silk organza saree with delicate metallic gold foil highlights and ethereal pastel dyeing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvRCEStUaQ1jiiiatlocoyK7nwRxgVcc5AYyfC11UfF_V8YcVSmFeh6pSBCQubuhmi95ryhmH3HrWTYle7eT23hKyBIokCmdhOtCsy26-KOlZbywYKisAOhPoowkQLyS6NaiEsw2Ac7QpeUoyAOmHHqsWh2lxIDrJvXCP9isYSNCvilqFp9jaSmkHi3i-_0oZ1IpAVut95mnXUbZdQPYSb9R3sAJZHzn4C4aWN60-ZumMeEfegQkaR')"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-surface-bright/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm uppercase">Couture Sheer</span>
+</div>
+<div class="p-space-md">
+<h4 class="font-headline-sm text-base font-semibold text-primary">Featherweight Organza &amp; Chiffon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">42 GSM crystalline finish with laser-registered dye dispersion and scalloped metallic borders.</p>
+<div class="mt-4 flex items-center justify-between text-xs font-label-sm uppercase text-outline">
+<span class="">MOQ: 50 Sarees</span>
+<span class="text-primary font-semibold">Ready Dye Queue</span>
+</div>
+</div>
+</div>
+<!-- Card B: Georgette & Crepe Weaves -->
+<div class="group md:col-span-4 bg-surface-container-lowest flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-low">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Heavy draped pure viscose georgette fabric in deep forest green and vermilion dye with granular pebble texture and fluid architectural fall" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrzmQBZY4BtrKk1256n6HWxT1l37M8ao9fBwEcYLnpIGt7atQuc7GQJtYZ4siUHviWxtC2L2uF1cLPmL2tgqrsYICIyHQtVXq8k6vgLrv5M74pp5bvxIUZJxI_yfpXX4Es2if2LHdk3ymQsDh5yky8Qgfy6lvR9V-rkSsC_w-g44oNyjPlFZnKUjzI2cBxMuD25Zrb5EDfo_NC50DLqBlyIrq_Aq9mM2QEOEnH90ufWIVqcMuZzjWM')"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-surface-bright/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm uppercase">Fluid Weave</span>
+</div>
+<div class="p-space-md">
+<h4 class="font-headline-sm text-base font-semibold text-primary">High-Twist Georgette &amp; Crepe</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">S &amp; Z hard-twist yarn construction offering wrinkle resistance and weighty kinetic fall for modern drapery.</p>
+<div class="mt-4 flex items-center justify-between text-xs font-label-sm uppercase text-outline">
+<span class="">MOQ: 100 Meters</span>
+<span class="text-primary font-semibold">Custom Pantone Match</span>
+</div>
+</div>
+</div>
+<!-- Card C: Heritage Zari Banarasi -->
+<div class="group md:col-span-4 bg-surface-container-lowest flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-low">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Intricate golden brocade zari warp detailing on a Varanasi bridal heirloom saree, shimmering metallic threads with traditional paisley motifs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-bY6TBfWNIAj8HNSbygn0UmPYBSPCECC6WBVVlaajl0v0mCHfegdKSm8kL40C1L5rNhw4cxe9hK9_XVGESGdZBNojU6dhWZUq6Kvf_XzA93hFvyq9FB-CxbMHfVu7JsOa-1bzrkxj63aeqd94FAXHLPg6cpcxldsccIHTg9tt2MVoOZgoqmUJ62tC2zbBkxDKOK3qz9ZLVqWnv_9t8j-lyiSUPZmiN3odKmUzQJfIaLqgqqsIQLyU')"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">Bridal Archival</span>
+</div>
+<div class="p-space-md">
+<h4 class="font-headline-sm text-base font-semibold text-primary">Heritage Zari &amp; Kadhua Banarasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pure silver and gold electroplated zari threads meticulously interwoven into heirloom bridal edits.</p>
+<div class="mt-4 flex items-center justify-between text-xs font-label-sm uppercase text-outline">
+<span class="">Lead: 30-45 Days</span>
+<span class="text-primary font-semibold">Archival Certified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. "FEEL THE FABRIC" INTERACTIVE TEXTURE VISUALIZER -->
+<section class="w-full bg-[#171717] text-[#fcf9f8] py-space-xl relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left: Interactive Inspection Viewport -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="flex items-center justify-between pb-space-sm font-label-sm text-label-sm uppercase tracking-widest text-[#9cb6a5]">
+<span class="inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#cee9d7] animate-ping"></span>
+              Optical Thread Surface Analyzer · 40x Macro
+            </span>
+<span class="">Batch Ref: KDH-88402</span>
+</div>
+<div class="relative w-full aspect-[16/11] bg-surface-variant overflow-hidden group shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-125 cursor-crosshair" data-alt="Extreme macro photography of raw handwoven silk threads interwoven with electroplated antique gold zari brocade, showing tactile fibrous structure" id="macro-texture-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB-x4pFro-ga0bpYYAh72Bn6vFvd9oBZzdlw1qcZW7jyypej5Ij53Gr1qzBYOj21S6EPCSiQZH_SjcqB2IfKvANKNMRcPwEh2TdnW2Kj2e9egP0xq-eeHQ2PEreTkjPQ_tVdO6v5F-7tqciG_rY5vxLuiPAQDNW8C01S7tWInzBNf1kc0agaCuOe6tv72vj9rjeccE_edpFfqsgotiK4O4d4dUBzrrbsk-5U6qoZMNSYhyaB_W25Yd">
+<!-- Live Inspection Overlays (simulated UI indicators) -->
+<div class="absolute inset-0 pointer-events-none flex flex-col justify-between p-6 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+<div class="flex justify-end">
+<span class="px-3 py-1 bg-black/70 backdrop-blur-md text-[#e4c282] font-spec-num text-spec-num text-xs tracking-wider">
+                  Hover to Magnify 125%
+                </span>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-black/60 backdrop-blur-md p-3 text-xs font-mono">
+<div>
+<span class="text-white/60 block">Warp Pitch</span>
+<span class="text-white font-semibold">120 Picks/Inch</span>
+</div>
+<div>
+<span class="text-white/60 block">Weft Yarn</span>
+<span class="text-white font-semibold">Pure Tussar Mulberry</span>
+</div>
+<div>
+<span class="text-white/60 block">Zari Gauge</span>
+<span class="text-white font-semibold">0.08mm Wire Inlay</span>
+</div>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] mt-3">
+            Real optical capture: Certified 24k electroplated antique gold zari intertwined with untreated Mulberry weft filament.
+          </p>
+</div>
+<!-- Right: Technical Specification Dossier -->
+<div class="lg:col-span-5 space-y-space-md lg:pl-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[#e4c282]">Tactile Calibration</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-[#fcf9f8] mt-1 font-normal leading-tight">
+              Feel the Tactility. <br>
+<span class="italic font-light text-[#9cb6a5]">Audit the Craft.</span>
+</h2>
+<p class="font-body-md text-body-md text-[#c2c8c2] mt-2 font-light">
+              We eliminate procurement guesswork. Every weave is documented with laboratory GSM, tensile resistance, and tactile drape indices.
+            </p>
+</div>
+<!-- Structured Spec Accordion / Data Table -->
+<div class="space-y-3 pt-space-sm">
+<div class="p-4 bg-white/5 backdrop-blur-sm transition-colors hover:bg-white/10">
+<div class="flex justify-between items-center text-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-[#cee9d7]">Weave Architecture</span>
+<span class="font-spec-num text-spec-num font-semibold text-white">Handcrafted Kadhua Interlacing</span>
+</div>
+<p class="text-xs text-[#c2c8c2] mt-1">Independent shuttles leave no floating threads on the reverse face.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm transition-colors hover:bg-white/10">
+<div class="flex justify-between items-center text-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-[#cee9d7]">Material Blend</span>
+<span class="font-spec-num text-spec-num font-semibold text-white">70% Silk / 30% Metallic Zari</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full mt-2 overflow-hidden flex">
+<div class="h-full bg-[#cee9d7]" style="width: 70%;"></div>
+<div class="h-full bg-[#e4c282]" style="width: 30%;"></div>
+</div>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm transition-colors hover:bg-white/10">
+<div class="flex justify-between items-center text-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-[#cee9d7]">Weight &amp; Lustre</span>
+<span class="font-spec-num text-spec-num font-semibold text-white">85 GSM · Subtle Mineral Sheen</span>
+</div>
+<p class="text-xs text-[#c2c8c2] mt-1">Calendered with botanical wax emulsions for whisper-soft skin feel.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm transition-colors hover:bg-white/10">
+<div class="flex justify-between items-center text-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-[#cee9d7]">Drape Coefficient</span>
+<span class="font-spec-num text-spec-num font-semibold text-white">Architectural Flow (0.42)</span>
+</div>
+<p class="text-xs text-[#c2c8c2] mt-1">Maintains sharp pleat retention while preserving fluid biological motion.</p>
+</div>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row gap-space-md">
+<a class="px-6 py-3.5 bg-[#cee9d7] hover:bg-[#b3cdbb] text-[#092015] font-label-md text-label-md uppercase tracking-widest font-semibold transition-colors text-center" href="#catalogue-request">
+              Request Fabric Swatch Book
+            </a>
+<a class="px-6 py-3.5 bg-transparent hover:bg-white/5 text-[#fcf9f8] font-label-md text-label-md uppercase tracking-widest transition-colors flex items-center justify-center gap-2" href="https://wa.me/">
+<span class="material-symbols-outlined text-base text-[#9cb6a5]">videocam</span>
+<span class="">Video Loom Inspection</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. MANUFACTURING JOURNEY ("FROM YARN TO FINISHED SAREE") -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<div class="max-w-3xl mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Industrial Rigour · Artisanal Soul</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary font-normal mt-1">
+          From Yarn to Finished Saree: The 7-Step Cadence
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Discover how raw cocoon filaments and metallic threads transform through high-speed Jacquard machinery into museum-grade textiles.
+        </p>
+</div>
+<!-- Factory Imagery + Process Highlight -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl items-center">
+<div class="lg:col-span-7 overflow-hidden shadow-md">
+<img class="w-full h-auto object-cover hover:scale-102 transition-transform duration-700" data-alt="Industrial automated jacquard textile looms in a sunlit Varanasi weaving mill, rows of green silk thread spools with artisans inspecting fabrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0D1B_fqJeYLMpCIHAgCQUbYtlvW6-v8Ixav_1caxcX2ijJFOrPEJfVbb5aou6qykvl24rJjcwdzi47IlccCDMOPtATuXNoeQImxca1gZRTj7ZqwdNjZ-FHcv2sPWrJ7_ReWqlZUUhYM7rBK5-pQNwR4ertveTtIy6S6laM3ZrP8N9jFUerF6YebHmVMfO80tX5MLdjsQuYzpBPVb95BtRuHXjuho9bwkoFRwSpwJMpCEplw_f8oho">
+</div>
+<div class="lg:col-span-5 space-y-space-md">
+<div class="p-space-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Made in India. Engineered for Scale.</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-2">
+              Zero-Defect Textile Engineering
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+              Our 60,000 sq.ft facility in Varanasi houses both German-engineered electronic Jacquard arrays and traditional pit-looms. We maintain strict humidity-controlled environments to eliminate yarn brittleness and ensure consistent warp tension throughout extreme seasonal shifts.
+            </p>
+<div class="mt-space-md pt-space-sm grid grid-cols-2 gap-4">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">100%</span>
+<span class="block font-body-sm text-body-sm text-outline">Azo-Free Certified</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">&lt; 0.1%</span>
+<span class="block font-body-sm text-body-sm text-outline">Skew Tolerance</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 7-Step Horizontal / Responsive Process Flow -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-space-sm">
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">01</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Yarn Selection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Grading Mulberry, Tussar, and zari threads for staple length and strength.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">02</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Loom Warp Set</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">High-speed computerized punch cards setup with tension monitors.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">03</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Eco-Dyeing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Closed-loop water treatment, heavy-metal free pigments with color fastness testing.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">04</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Zari Insertion</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Kadhua or electronic rapier inlay of fine precious-metal brocade wefts.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">05</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Steam Calendering</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Thermal rolling and natural softening to seal the silk hand-feel.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">06</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Light Table QA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Human &amp; sensor 100% meter-by-meter illumination for pull flaws.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest shadow-sm hover:shadow transition-shadow">
+<span class="font-spec-num text-spec-num text-xs font-bold text-secondary">07</span>
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary mt-2">Export Packing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Moisture-barrier vacuum packaging ready for worldwide air courier freight.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. "YOUR DESIGN. OUR LOOMS." (CUSTOM MANUFACTURING / BESPOKE WEAVING) -->
+<section class="w-full bg-[#31483b] text-[#fcf9f8] py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#1b3126] text-[#cee9d7] font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-xs">architecture</span>
+            OEM &amp; Private Label Services
+          </div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg font-normal tracking-tight text-white">
+            YOUR DESIGN. <br>
+<span class="italic text-[#cee9d7] font-light">OUR LOOMS.</span>
+</h2>
+<p class="font-body-md text-body-md text-[#c2c8c2] leading-relaxed">
+            Have an exclusive saree concept, archival heirloom sketch, or proprietary yarn blend? We allocate dedicated looms exclusively for your label with strict intellectual property and pattern NDA protection.
+          </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3 text-sm text-[#fcf9f8]">
+<span class="material-symbols-outlined text-[#cee9d7] text-lg">verified</span>
+<span class="">48 to 72 Hour Strike-Off Samples via Express Courier</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-[#fcf9f8]">
+<span class="material-symbols-outlined text-[#cee9d7] text-lg">verified</span>
+<span class="">Proprietary Cad Software Pattern Digitization</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-[#fcf9f8]">
+<span class="material-symbols-outlined text-[#cee9d7] text-lg">verified</span>
+<span class="">Exclusive Copyright Safeguarding &amp; Pattern Archival</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-block px-space-lg py-4 bg-[#fcf9f8] hover:bg-[#cee9d7] text-[#092015] font-label-md text-label-md uppercase tracking-widest font-semibold transition-colors" href="#catalogue-request">
+              Start a Custom Project / Request MOQ
+            </a>
+</div>
+</div>
+<!-- Right Side: 6-Step Workflow Architecture -->
+<div class="lg:col-span-7 bg-[#1b3126] p-space-lg md:p-space-xl shadow-xl">
+<h3 class="font-headline-sm text-headline-sm text-white mb-space-md">
+            The Bespoke Production Workflow
+          </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 01</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Design Spec Brief</h4>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] text-xs mt-1">Submit high-res motif artwork, target Pantone codes, and weight specs.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 02</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Strike-off Sample</h4>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] text-xs mt-1">We weave a 1-meter physical sample swatch delivered within 72 hours.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 03</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Buyer Calibration</h4>
+<p class="font-body-sm text-body-sm text-c2c8c2 text-xs mt-1">Review drape, feel, and dye accuracy with our textile engineering team.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 04</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Loom Production</h4>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] text-xs mt-1">Scheduled allocation of looms for seamless, uniform bulk run execution.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 05</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Quality Sign-off</h4>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] text-xs mt-1">Full 4-point inspection audit report and certificates of origin generated.</p>
+</div>
+<div class="p-4 bg-white/5 backdrop-blur-sm">
+<span class="font-spec-num text-spec-num font-bold text-[#cee9d7] text-xs">STAGE 06</span>
+<h4 class="font-label-md text-label-md uppercase text-white mt-1">Global Freight</h4>
+<p class="font-body-sm text-body-sm text-[#c2c8c2] text-xs mt-1">Air or ocean container dispatch with customs clearance support.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. B2B CLIENT ARCHETYPES ("BUILT FOR BUSINESS") -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Client Ecosystem</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary font-normal mt-1">
+          Built for Global Scale &amp; Discerning Boutiques
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Tailored procurement programs designed to integrate effortlessly into your inventory turnover models.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<div class="p-space-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">warehouse</span>
+</div>
+<h3 class="font-headline-sm text-base font-semibold text-primary">Saree Wholesalers &amp; Mega Distributors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              High-volume capacity with dependable monthly supply schedules, consolidated logistics, and aggressive tiered wholesale pricing.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm text-xs font-label-sm uppercase text-secondary font-bold">
+            MOQ: 250+ Sarees / Tier 1 Terms
+          </div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">storefront</span>
+</div>
+<h3 class="font-headline-sm text-base font-semibold text-primary">Boutique Chains &amp; Retail Salons</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Curated capsule edits delivered on hanger-ready packaging with custom branding tags and small-batch exclusivity clauses.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm text-xs font-label-sm uppercase text-secondary font-bold">
+            MOQ: 25 Sarees / Capsule
+          </div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">styler</span>
+</div>
+<h3 class="font-headline-sm text-base font-semibold text-primary">Global Fashion &amp; Couture Houses</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Ultra-luxurious custom run fabrics, runway lengths, proprietary dye formulas, and dedicated artisan master weavers.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm text-xs font-label-sm uppercase text-secondary font-bold">
+            MOQ: Flexible Runway Custom
+          </div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">flight_takeoff</span>
+</div>
+<h3 class="font-headline-sm text-base font-semibold text-primary">Overseas Importers &amp; Diaspora Chains</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Full international compliance (US, UK, GCC, EU, Singapore), harmonized tariff documentation, and seamless door-to-door freight.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm text-xs font-label-sm uppercase text-secondary font-bold">
+            Full CIF / DDP Air &amp; Sea
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. HIGH-CONVERSION B2B CATALOGUE & SAMPLE REQUEST SECTION -->
+<section class="w-full bg-[#f6f3f2] py-space-xl" id="catalogue-request">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column: Context & Swatch Box Upsell -->
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Trade Procurement</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary font-normal leading-tight">
+            Initiate Your Trade Partnership
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            Receive our comprehensive 2025-2026 Wholesale Lookbook, current yarn price index, and tiered MOQ matrices within 2 business hours.
+          </p>
+<!-- Swatch Box Feature Tile -->
+<div class="p-space-md bg-surface-container-lowest shadow-sm space-y-3 mt-space-lg">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">inventory_2</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-primary">Request Curated Swatch Box</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Shipped Worldwide in 48 Hours</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Includes 30+ physical fabric cuttings (8x8 inches): Pure Katan, Organza, Tussar, Viscose Georgettes, and real gold/silver Zari headers.
+            </p>
+<div class="flex items-center gap-4 text-xs font-spec-num text-spec-num text-on-surface">
+<span class="">Complimentary for registered wholesale buyers &amp; fashion labels.</span>
+</div>
+</div>
+<!-- Direct Liaison Line -->
+<div class="pt-space-sm space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">phone_in_talk</span>
+<span class="">Direct Mill Desk: <strong>+91 (0) 542 228 9012</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span class="">Commercial Head: <strong>procurement@avanyatextiles.com</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">schedule</span>
+<span class="">Desk Hours: Mon – Sat, 09:00 – 19:30 IST</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive B2B Request Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl shadow-lg">
+<form class="space-y-space-md" id="b2b-inquiry-form" onsubmit="event.preventDefault(); alert('Your procurement dossier request has been registered. An Avanya Trade Concierge will dispatch the catalog and reach out within 2 hours.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Full Name *</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="e.g. Radhika Kapoor" required="" type="text">
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Company / Brand Name *</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="e.g. Kapoor Atelier &amp; Co." required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Official Business Email *</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="radhika@domain.com" required="" type="email">
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Phone / WhatsApp *</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="+91 98765 43210" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Business Category *</label>
+<select class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright">
+<option value="wholesaler">Saree Wholesaler / Distributor</option>
+<option value="retail_boutique">Boutique Chain / High-End Store</option>
+<option value="fashion_label">Fashion Designer / Couture House</option>
+<option value="exporter">International Importer / Trade Agent</option>
+<option value="other">Other Commercial Client</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Target Products *</label>
+<select class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright">
+<option value="pure_handloom_sarees">Pure Handloom Silk Sarees</option>
+<option value="jacquard_edits">High-Speed Jacquard Sarees</option>
+<option value="organza_chiffon">Organza &amp; Chiffon Weaves</option>
+<option value="heritage_banarasi">Heirloom Banarasi Bridal Sarees</option>
+<option value="custom_weaving">Custom Loom Run / OEM Design</option>
+<option value="running_fabric">Running Fabric Meters by Roll</option>
+</select>
+</div>
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Estimated Order Volume / Timeline</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<label class="flex items-center gap-2 p-2 bg-surface-container-low text-xs cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary" name="order_vol" type="radio" value="sample_run">
+<span class="">Sample Run</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low text-xs cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="order_vol" type="radio" value="25_100">
+<span class="">25 - 100 Pcs</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low text-xs cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="order_vol" type="radio" value="100_500">
+<span class="">100 - 500 Pcs</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low text-xs cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="order_vol" type="radio" value="bulk_500">
+<span class="">500+ Pcs</span>
+</label>
+</div>
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Custom Notes or Fabric Specifications</label>
+<textarea class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="Tell us about your seasonal edit, target price tier, or specific yarn requirements..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<input class="accent-primary" id="sample-box-request" type="checkbox">
+<label class="text-xs text-on-surface-variant font-body-sm" for="sample-box-request">
+                Also dispatch the physical Curated Swatch Sample Box (shipped within 48h).
+              </label>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row gap-space-sm items-center">
+<button class="w-full sm:w-auto flex-1 px-space-lg py-4 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-widest font-semibold transition-colors text-center shadow-md" type="submit">
+                Request Comprehensive B2B Catalogue
+              </button>
+<a class="w-full sm:w-auto px-6 py-4 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center justify-center gap-2 font-semibold" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Instant WhatsApp</span>
+</a>
+</div>
+<p class="font-spec-num text-spec-num text-[11px] text-outline text-center pt-2">
+              🔒 100% Confidentiality Assured. We honor NDA agreements for all proprietary artwork &amp; fashion label collections.
+            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-[#171717] text-[#fcf9f8] pt-space-xl pb-space-lg"><div class="w-full px-margin md:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-xl"><div class="lg:col-span-5 flex flex-col justify-between pr-0 lg:pr-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-md"><span class="font-headline-md text-headline-md uppercase tracking-wider text-surface-bright">Avanya</span><span class="font-label-sm text-label-sm text-[#c2c8c2] tracking-widest uppercase">Master Mill &amp; Handloom</span></div><p class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md italic text-surface-container-highest max-w-md">Textiles, Crafted With Intent.</p><p class="font-body-sm text-body-sm text-[#c2c8c2] max-w-sm">Curators of rare tussar silks, kadhua brocades, and industrial-precision handloom weaves. Built for haute couture houses and discerning global retailers.</p></div><div class="pt-space-lg"><span class="font-label-sm text-label-sm uppercase tracking-widest text-[#9cb6a5]">Loom Atelier: Varanasi • Chanderi • Kanchipuram</span></div></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-md text-label-md uppercase tracking-widest text-surface-container-highest">Architecture</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="collections" href="#">Archival Collections</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="sarees" href="#">Heirloom Sarees</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="fabric-library" href="#">Fabric Swatch Library</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="manufacturing" href="#">Loom Infrastructure</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="about" href="#">The Atelier Story</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="journal" href="#">Editorial &amp; Journal</a></li></ul></div><div class="lg:col-span-3 space-y-space-md"><h4 class="font-label-md text-label-md uppercase tracking-widest text-surface-container-highest">Trade &amp; B2B Procurement</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="request-catalogue" href="#">Request Catalogue</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="request-sample" href="#">Request Sample Swatches</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="custom-looms" href="#">Custom Looms &amp; Dye Lots</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="moq-trade-enquiries" href="#">MOQ &amp; Trade Enquiries</a></li><li class="list-none"><a class="text-[#c2c8c2] hover:text-surface-bright transition-colors" data-path="compliance-standards" href="#">Export Compliance &amp; Testing</a></li></ul></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-md text-label-md uppercase tracking-widest text-surface-container-highest">Atelier Desk</h4><div class="space-y-space-sm font-body-sm text-body-sm text-[#c2c8c2]"><p class="">Couture &amp; Wholesale Inquiries</p><p class="text-surface-bright font-spec-num text-spec-num">concierge@avanyatextiles.com</p><p class="text-surface-bright font-spec-num text-spec-num">+91 (0) 542 228 9012</p><div class="pt-space-sm"><span class="inline-flex items-center gap-2 px-2 py-1 bg-[#31483b] text-[#9cb6a5] font-label-sm text-label-sm uppercase"><span class="w-1.5 h-1.5 rounded-full bg-[#cee9d7]"></span>All Looms Operating</span></div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-[#c2c8c2] font-body-sm text-body-sm"><p class="">© 2025 AVANYA TEXTILE ATELIER. All rights reserved. Registered Handloom &amp; Industrial Mill.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm uppercase tracking-wider"><a class="hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">Privacy Statement</a><a class="hover:text-surface-bright transition-colors" data-path="terms-of-trade" href="#">Terms of Trade</a><a class="hover:text-surface-bright transition-colors" data-path="sustainability-charter" href="#">Sustainability Charter</a></div></div></div></footer>
+
+</body></html>

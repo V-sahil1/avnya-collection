@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* fixed 80px header */
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  /* The Stitch export renders every heading in Cormorant Garamond with a slight negative track. */
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: var(--font-cormorant), Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: #fea589;
+    color: #783923;
+  }
+}
+
+@layer components {
+  .container-editorial {
+    @apply mx-auto w-full max-w-7xl px-margin md:px-margin-desktop;
+  }
+  .eyebrow {
+    @apply font-label-sm text-label-sm font-bold uppercase tracking-widest text-secondary;
+  }
+  .field {
+    @apply w-full rounded-none border border-transparent bg-surface-container-low px-3 py-2.5 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:border-forest focus:bg-surface-bright focus:outline-none;
+  }
+  .field-label {
+    @apply block font-label-sm text-label-sm uppercase tracking-wider text-on-surface;
+  }
+}
+
+/* --- Motion ----------------------------------------------------------------------------------- */
+
+/* Until GSAP has set start states, hide everything it will animate in (see layout.tsx). */
+html.gsap-pending [data-anim]:not([data-anim="parallax"]):not([data-anim="scrub-words"]):not([data-anim="hero-exit"]),
+html.gsap-pending [data-anim-stagger] > * {
+  visibility: hidden;
+}
+
+/* First-visit intro curtain */
+html.intro #intro-curtain {
+  display: flex;
+}
+html.intro body {
+  overflow: hidden;
+}
+
+/* Masked SplitText lines: keep italic descenders and swashes from being clipped */
+.split-line {
+  padding-bottom: 0.06em;
+}
+
+/* Animated underline for nav and editorial links */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s cubic-bezier(0.22, 1, 0.36, 1), color 0.3s;
+}
+.link-underline:hover,
+.link-underline[aria-current="page"] {
+  background-size: 100% 1px;
+}
+
+/* Weave-name marquee */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.animate-marquee {
+  animation: marquee 48s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee 56s linear infinite reverse;
+}
+.marquee:hover .animate-marquee,
+.marquee:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}
+
+/* Slow shimmer across gold labels */
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+.text-shimmer {
+  background: linear-gradient(90deg, #e4c282 0%, #e4c282 40%, #fff6df 50%, #e4c282 60%, #e4c282 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .text-shimmer {
+    animation: none !important;
+  }
+}

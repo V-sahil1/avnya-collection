@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import Header from "@/components/Header";
+import IntroLoader from "@/components/IntroLoader";
 import Footer from "@/components/Footer";
 import MobileQuoteBar from "@/components/MobileQuoteBar";
 import SiteAnimations from "@/components/SiteAnimations";
@@ -39,12 +40,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cormorant.variable} ${jakarta.variable}`} suppressHydrationWarning>
       <head>
         {/* Hide animated elements until GSAP has set their start states (prevents a flash of
-            un-animated content), and play the intro curtain once per session. Failsafes always
+            un-animated content), and show the saree loader on every page load. Failsafes always
             reveal the page even if JS breaks. */}
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var d=document.documentElement;d.classList.add('gsap-pending');setTimeout(function(){d.classList.remove('gsap-pending')},3000);try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('avanya-intro')){sessionStorage.setItem('avanya-intro','1');d.classList.add('intro');setTimeout(function(){d.classList.remove('intro')},6500)}}catch(e){}})();",
+              "(function(){var d=document.documentElement;d.classList.add('gsap-pending');setTimeout(function(){d.classList.remove('gsap-pending')},3000);d.classList.add('intro');setTimeout(function(){d.classList.remove('intro')},8000)})();",
           }}
         />
         {/* Material Symbols icon font (used by the Stitch design) */}
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-surface font-body-md text-body-md text-on-surface antialiased">
+        <IntroLoader />
         <Header />
         <main className="w-full bg-surface pt-20">{children}</main>
         <Footer />

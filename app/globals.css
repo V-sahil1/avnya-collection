@@ -47,9 +47,10 @@ html.gsap-pending [data-anim-stagger] > * {
   visibility: hidden;
 }
 
-/* First-visit intro curtain */
-html.intro #intro-curtain {
-  display: flex;
+/* Saree loader: server-rendered so it covers the page before JS runs; hidden once it finishes
+   (and by the failsafe timeout in layout.tsx). */
+html:not(.intro) #intro-loader {
+  display: none;
 }
 html.intro body {
   overflow: hidden;

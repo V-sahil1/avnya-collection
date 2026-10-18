@@ -1,0 +1,127 @@
+/* Full-viewport saree loader. Palette from the site: forest / bottle green, gold, ivory. */
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 45%, #2a4135 0%, #1b3126 50%, #0c1711 100%);
+  color: #f7f4ee;
+  touch-action: none;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Soft dark halo so the brand stays legible while the pallu passes behind it */
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(92vw, 760px);
+  aspect-ratio: 2 / 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(closest-side, rgba(9, 20, 14, 0.66), rgba(9, 20, 14, 0));
+  pointer-events: none;
+}
+
+.brandBlock {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.ornament {
+  position: relative;
+  width: 72px;
+  height: 1px;
+  margin-bottom: 22px;
+  background: linear-gradient(90deg, transparent, #d9ad5b, transparent);
+}
+.ornament::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background: #e3bd72;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.brand {
+  margin: 0;
+  /* Tracking adds space after the last letter too; pad the left to keep it optically centred */
+  padding-left: 0.2em;
+  font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.6rem, 9vw, 5.25rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f7f4ee;
+  text-shadow: 0 2px 30px rgba(6, 16, 11, 0.9), 0 0 2px rgba(6, 16, 11, 0.6);
+}
+
+.tagline {
+  margin: 16px 0 0;
+  padding-left: 0.32em;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #e4c282;
+  text-shadow: 0 1px 12px rgba(6, 16, 11, 0.9);
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding-left: 0.2em;
+  }
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.track {
+  display: block;
+  width: 150px;
+  height: 1px;
+  overflow: hidden;
+  background: rgba(227, 189, 114, 0.25);
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #b8862f, #f4d78f);
+  transform-origin: left center;
+}
+
+.percent {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.2em;
+  color: rgba(247, 244, 238, 0.75);
+}

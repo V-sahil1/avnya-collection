@@ -27,7 +27,7 @@ import { gsap, ScrollTrigger, SplitText } from "./gsap";
 const CLEAR = "transform,opacity,visibility";
 
 // Extra delay for the on-load hero sequence while the first-visit intro curtain is lifting.
-const introOffset = () => (document.documentElement.classList.contains("intro") ? 1.9 : 0);
+const introOffset = () => (document.documentElement.classList.contains("intro") ? 3.2 : 0);
 
 const delayOf = (el: Element) => {
   const d = (el as HTMLElement).dataset.delay;

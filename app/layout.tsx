@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var d=document.documentElement;d.classList.add('gsap-pending');setTimeout(function(){d.classList.remove('gsap-pending')},3000);try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('avanya-intro')){sessionStorage.setItem('avanya-intro','1');d.classList.add('intro');setTimeout(function(){d.classList.remove('intro')},5000)}}catch(e){}})();",
+              "(function(){var d=document.documentElement;d.classList.add('gsap-pending');setTimeout(function(){d.classList.remove('gsap-pending')},3000);try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('avanya-intro')){sessionStorage.setItem('avanya-intro','1');d.classList.add('intro');setTimeout(function(){d.classList.remove('intro')},6500)}}catch(e){}})();",
           }}
         />
         {/* Material Symbols icon font (used by the Stitch design) */}

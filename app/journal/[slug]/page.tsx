@@ -28,7 +28,7 @@ export default async function ArticlePage({ params }: Params) {
   return (
     <>
       <article className="w-full bg-surface pb-space-xl md:pb-20">
-        <header className="mx-auto max-w-3xl px-margin pt-16 text-center md:px-margin-desktop md:pt-24">
+        <header className="mx-auto max-w-3xl px-margin pt-36 text-center md:px-margin-desktop md:pt-44">
           <Link href="/journal" data-anim="fade" data-delay="0" className="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-olive hover:text-primary">
             <Icon name="arrow_back" className="text-sm" /> Journal
           </Link>

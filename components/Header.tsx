@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,6 +11,9 @@ import { CONTACT, NAV } from "@/lib/site";
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  // Transparent over the dark hero imagery; pages without one get the solid glass bar from the start.
+  const [overHero, setOverHero] = useState(true);
 
   // Close the drawer on navigation and lock page scroll while it is open.
   useEffect(() => setOpen(false), [pathname]);
@@ -20,57 +24,66 @@ export default function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    setOverHero(!!document.querySelector("[data-hero]"));
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [pathname]);
+
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
+  // Stays see-through over the hero; only firms up where white text would otherwise lose contrast.
+  const tone = open || !overHero ? "bg-ink/80 backdrop-blur-xl" : scrolled ? "bg-ink/30 backdrop-blur-lg" : "bg-transparent";
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 w-full bg-surface/90 shadow-[0_1px_8px_rgba(0,0,0,0.04)] backdrop-blur-md">
-        <div className="flex h-20 w-full items-center justify-between gap-space-md px-margin md:px-margin-desktop">
+      <header
+        className={`fixed left-0 right-0 top-0 z-50 w-full transition-[background-color,backdrop-filter] duration-500 ${tone}`}
+      >
+        <div className="relative flex h-20 w-full items-center justify-between gap-space-md px-margin md:px-margin-desktop">
           <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Avanya Textile Atelier — home">
-            <Image src="/images/avanya-mark.png" alt="" width={385} height={465} priority className="h-9 w-auto" />
-            <div className="flex flex-col">
-              <span className="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">Avanya</span>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Textile Atelier</span>
-            </div>
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-surface-bright">
+              <Image src="/images/avanya-mark.png" alt="" width={385} height={465} priority className="h-6 w-auto" />
+            </span>
+            <span className="font-serif text-[24px] font-semibold leading-none text-white sm:text-[26px]">Avanya</span>
           </Link>
-  
-          <nav className="hidden items-center gap-space-md xl:flex 2xl:gap-space-lg" aria-label="Primary">
-            {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                aria-current={isActive(item.href) ? "page" : undefined}
-                className={`link-underline whitespace-nowrap py-1 font-label-md text-label-md uppercase transition-colors hover:text-primary ${
-                  isActive(item.href) ? "font-bold text-primary" : "text-on-surface-variant"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+
+          <nav
+            aria-label="Primary"
+            className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-1 rounded-full border border-white/20 bg-white/10 p-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-md xl:flex"
+          >
+            {NAV.map((item) => {
+              const active = isActive(item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`relative whitespace-nowrap rounded-full px-5 py-2 font-sans text-[15px] font-medium transition-colors ${
+                    active ? "text-ink" : "text-white/85 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {active && (
+                    <motion.span
+                      layoutId="nav-active-pill"
+                      transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                      className="absolute inset-0 rounded-full bg-white shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
+                    />
+                  )}
+                  <span className="relative">{item.label}</span>
+                </Link>
+              );
+            })}
           </nav>
-  
-          <div className="flex items-center gap-space-sm md:gap-space-md">
-            <a
-              href={CONTACT.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden items-center gap-space-xs whitespace-nowrap bg-surface-container px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface transition-colors hover:bg-surface-container-high lg:flex xl:hidden 2xl:flex"
-            >
-              <Icon name="chat" className="text-[16px] text-primary" />
-              <span>WhatsApp Enquiry</span>
-            </a>
+
+          <div className="flex items-center gap-2 sm:gap-space-sm">
             <Link
               href="/request-catalogue"
-              className="hidden items-center whitespace-nowrap bg-primary px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-widest text-on-primary transition-colors hover:bg-primary-container sm:flex"
+              className="flex items-center whitespace-nowrap rounded-full bg-white px-5 py-2.5 font-sans text-[14px] font-semibold text-ink shadow-[0_2px_12px_rgba(0,0,0,0.15)] transition-colors hover:bg-sand sm:px-6 sm:py-3 sm:text-[15px]"
             >
-              Request Catalogue
-            </Link>
-            <Link
-              href="/request-catalogue#trade-form"
-              aria-label="Trade account"
-              className="hidden h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary transition-colors hover:bg-primary-container md:flex"
-            >
-              <Icon name="person" className="text-[18px] text-on-primary" />
+              <span className="sm:hidden">Catalogue</span>
+              <span className="hidden sm:inline">Request Catalogue</span>
             </Link>
             <button
               type="button"
@@ -78,9 +91,12 @@ export default function Header() {
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? "Close menu" : "Open menu"}
-              className="flex h-10 w-10 items-center justify-center text-primary transition-colors hover:bg-surface-container xl:hidden"
+              className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 backdrop-blur-md transition-colors hover:bg-white/20 xl:hidden"
             >
-              <Icon name={open ? "close" : "menu"} className="text-[26px]" />
+              {/* Three-line burger that folds into an X */}
+              <span className={`absolute h-[1.5px] w-[18px] rounded-full bg-white transition-transform duration-300 ${open ? "rotate-45" : "-translate-y-[6px]"}`} />
+              <span className={`absolute h-[1.5px] w-[18px] rounded-full bg-white transition-opacity duration-200 ${open ? "opacity-0" : "opacity-100"}`} />
+              <span className={`absolute h-[1.5px] rounded-full bg-white transition-all duration-300 ${open ? "w-[18px] -rotate-45" : "w-[12px] translate-x-[3px] translate-y-[6px]"}`} />
             </button>
           </div>
         </div>
@@ -110,7 +126,7 @@ export default function Header() {
           <div className="mt-space-xl flex flex-col gap-space-sm">
             <Link
               href="/request-catalogue"
-              className="bg-primary px-space-lg py-4 text-center font-label-md text-label-md uppercase tracking-widest text-on-primary"
+              className="rounded-full bg-primary px-space-lg py-4 text-center font-label-md text-label-md uppercase tracking-widest text-on-primary"
             >
               Request Catalogue
             </Link>
@@ -118,7 +134,7 @@ export default function Header() {
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-surface-container px-space-lg py-4 font-label-md text-label-md uppercase tracking-wider text-on-surface"
+              className="flex items-center justify-center gap-2 rounded-full bg-surface-container px-space-lg py-4 font-label-md text-label-md uppercase tracking-wider text-on-surface"
             >
               <Icon name="chat" className="text-[18px] text-primary" />
               WhatsApp Enquiry

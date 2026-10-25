@@ -134,3 +134,13 @@ html.intro body {
     animation: none !important;
   }
 }
+
+/* Hero slide autoplay progress */
+@keyframes hero-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

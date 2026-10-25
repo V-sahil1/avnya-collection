@@ -14,7 +14,7 @@ type Props = {
 /** Editorial page header for inner pages — same lighting treatment as the homepage hero, at a shorter height. */
 export default function PageHero({ overline, title, intro, image, imagePosition = "center", crumb, meta }: Props) {
   return (
-    <section className="relative w-full overflow-hidden bg-primary text-surface-bright">
+    <section data-hero className="relative w-full overflow-hidden bg-primary text-surface-bright">
       {image && (
         <div className="absolute inset-0">
           <div data-anim="parallax" data-speed="7" className="absolute inset-x-0 -top-[10%] h-[120%]">
@@ -24,7 +24,7 @@ export default function PageHero({ overline, title, intro, image, imagePosition 
           <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
         </div>
       )}
-      <div data-anim="hero-exit" className="container-editorial relative z-10 py-16 md:py-24">
+      <div data-anim="hero-exit" className="container-editorial relative z-10 pb-16 pt-36 md:pb-24 md:pt-44">
         <nav aria-label="Breadcrumb" data-anim="fade" data-delay="0.1" className="mb-space-lg font-label-sm text-label-sm uppercase tracking-widest text-outline-variant">
           <Link href="/" className="hover:text-surface-bright">Home</Link>
           <span className="mx-2 opacity-40">/</span>

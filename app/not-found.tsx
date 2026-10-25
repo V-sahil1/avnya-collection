@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="flex min-h-[70vh] w-full items-center bg-surface">
+    <section className="flex min-h-[70vh] w-full items-center bg-surface pt-20">
       <div className="container-editorial py-space-xl text-center">
         <span data-anim="fade" data-delay="0" className="eyebrow">Error 404 · Thread Not Found</span>
         <h1 data-anim="lines" data-delay="0.15" className="mt-2 font-headline-lg text-headline-lg-mobile text-primary md:text-display-hero">

@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-surface font-body-md text-body-md text-on-surface antialiased">
         <IntroLoader />
         <Header />
-        <main className="w-full bg-surface pt-20">{children}</main>
+        <main className="w-full bg-surface">{children}</main>
         <Footer />
         <MobileQuoteBar />
         <SiteAnimations />
